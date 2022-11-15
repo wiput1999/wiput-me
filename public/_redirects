@@ -1,2 +1,2 @@
-wiput-me.pages.dev/_ wiput.me/:splat 302
-www.wiput.me/_ wiput.me/:splat 301
+wiput-me.pages.dev/* wiput.me/:splat 302
+www.wiput.me/* wiput.me/:splat 301
