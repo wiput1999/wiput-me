@@ -3,8 +3,9 @@ on:
     branches:
       - main
 
+name: Build and Deploy
 jobs:
-  cache-and-install:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
