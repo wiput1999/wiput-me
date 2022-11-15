@@ -1,2 +1,2 @@
-https://wiput-me.pages.dev/* https://wiput.me/:splat 302!
-https://www.wiput.me/* https://wiput.me/:splat 301!
+wiput-me.pages.dev/_ wiput.me/:splat 302
+www.wiput.me/_ wiput.me/:splat 301
