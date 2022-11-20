@@ -1,0 +1,22 @@
+---
+import MainLayout, { Props } from '../layouts/main.astro'
+
+const props: Props = {
+  header: {
+    title: '404 Page Not Found',
+    description: '404 Page Not Found',
+  },
+}
+---
+
+<MainLayout header={props.header}>
+  <main>
+    <div
+      class="w-full min-h-screen grid grid-cols-1 justify-center items-center"
+    >
+      <div class="w-full text-center">
+        <p class="text-4xl">404 Not Found</p>
+      </div>
+    </div>
+  </main>
+</MainLayout>
