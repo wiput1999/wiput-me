@@ -1,0 +1,14 @@
+---
+import MainLayout, { Props } from '../layouts/main.astro'
+
+const props: Props = {
+  header: {
+    title: 'Wiput Pootong · Curriculum Vitae',
+    description: 'I am Software Engineer...',
+  },
+}
+---
+
+<MainLayout header={props.header}>
+  <main>About Page</main>
+</MainLayout>
