@@ -1,22 +1,22 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/mdx': ^0.13.0
+  '@astrojs/mdx': ^0.14.0
   '@astrojs/tailwind': ^2.1.3
   '@types/canvas-confetti': ^1.4.3
-  astro: ^1.7.2
+  astro: ^1.8.0
   autoprefixer: ^10.4.7
   canvas-confetti: ^1.5.1
   postcss: ^8.4.20
   prettier: ^2.8.1
-  prettier-plugin-astro: ^0.7.0
+  prettier-plugin-astro: ^0.7.1
   tailwindcss: ^3.0.24
 
 dependencies:
-  '@astrojs/mdx': 0.13.0
+  '@astrojs/mdx': 0.14.0
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
   '@types/canvas-confetti': 1.6.0
-  astro: 1.7.2
+  astro: 1.8.0
   autoprefixer: 10.4.13_postcss@8.4.20
   canvas-confetti: 1.6.0
   postcss: 8.4.20
@@ -24,7 +24,7 @@ dependencies:
 
 devDependencies:
   prettier: 2.8.1
-  prettier-plugin-astro: 0.7.0
+  prettier-plugin-astro: 0.7.1
 
 packages:
 
@@ -36,21 +36,17 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: false
 
-  /@astrojs/compiler/0.29.15:
-    resolution: {integrity: sha512-vicPD8oOPNkcFZvz71Uz/nJcadovurUQ3L0yMZNPb6Nn6T1nHhlSHt5nAKaurB2pYU9DrxOFWZS2/RdV+JsWmQ==}
-
   /@astrojs/compiler/0.31.3:
     resolution: {integrity: sha512-WbA05QH5xkdaJ3XtzDuYOjtqsip2InW5rk156sSdaHs5qN2NroUHbzWZthHJwmNAAjQSGXVIj+O6jQj81zzX/Q==}
-    dev: false
 
   /@astrojs/language-server/0.28.3:
     resolution: {integrity: sha512-fPovAX/X46eE2w03jNRMpQ7W9m2mAvNt4Ay65lD9wl1Z5vIQYxlg7Enp9qP225muTr4jSVB5QiLumFJmZMAaVA==}
     hasBin: true
     dependencies:
-      '@vscode/emmet-helper': 2.8.4
+      '@vscode/emmet-helper': 2.8.6
       events: 3.3.0
       prettier: 2.8.1
-      prettier-plugin-astro: 0.7.0
+      prettier-plugin-astro: 0.7.1
       source-map: 0.7.4
       vscode-css-languageservice: 6.2.1
       vscode-html-languageservice: 5.0.3
@@ -61,8 +57,8 @@ packages:
       vscode-uri: 3.0.7
     dev: false
 
-  /@astrojs/markdown-remark/1.1.3:
-    resolution: {integrity: sha512-6MDuQXbrp2fZBYBIqD+0jvSqYAukiMTte6oLNHiEYsLf3KIMlVAZj6dDgUJakgL7cQ4fmzWb0HUqzVpxAsasLw==}
+  /@astrojs/markdown-remark/1.2.0:
+    resolution: {integrity: sha512-Cb+uhSuukyfERknfJ8K4iJLeKJaiZWi1BTwPS4fzw0bc9kGKe5VeTRzd2E25+vaMnRTk0tN/y6QfYEMMN3Q97g==}
     dependencies:
       '@astrojs/micromark-extension-mdx-jsx': 1.0.3
       '@astrojs/prism': 1.0.2
@@ -92,10 +88,11 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx/0.13.0:
-    resolution: {integrity: sha512-2D/O5AjCBQQ/PLx3P/WysACdFxz97iQPu55hy9pc+u04a+fMFuVdKm9ftWXpsNHL2SXbKb7uRpcuFw93FnRNDw==}
+  /@astrojs/mdx/0.14.0:
+    resolution: {integrity: sha512-lmNh/7CeQmdZ0OCbnDnoDxQTKWleFdlT5YkjsutGIOhabY0xgCcWwb1Rbs/9m4vvTdCkp9zsZdRzUKEPFPbcsA==}
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
+      '@astrojs/markdown-remark': 1.2.0
       '@astrojs/prism': 1.0.2
       '@mdx-js/mdx': 2.2.1
       '@mdx-js/rollup': 2.2.1
@@ -153,7 +150,7 @@ packages:
     resolution: {integrity: sha512-SJVfZHp00f8VZsT1fsx1+6acJGUNt/84xZytV5znPzzNE8RXjlE0rv03llgTsEeUHYZc6uJah91jNojS7RldFg==}
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
-      ci-info: 3.7.0
+      ci-info: 3.7.1
       debug: 4.3.4
       dlv: 1.1.3
       dset: 3.1.2
@@ -201,7 +198,7 @@ packages:
       convert-source-map: 1.9.0
       debug: 4.3.4
       gensync: 1.0.0-beta.2
-      json5: 2.2.2
+      json5: 2.2.3
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
@@ -692,14 +689,13 @@ packages:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: false
 
-  /@vscode/emmet-helper/2.8.4:
-    resolution: {integrity: sha512-lUki5QLS47bz/U8IlG9VQ+1lfxMtxMZENmU5nu4Z71eOD5j9FK0SmYGL5NiVJg9WBWeAU0VxRADMY2Qpq7BfVg==}
+  /@vscode/emmet-helper/2.8.6:
+    resolution: {integrity: sha512-IIB8jbiKy37zN8bAIHx59YmnIelY78CGHtThnibD/d3tQOKRY83bYVi9blwmZVUZh6l9nfkYH3tvReaiNxY9EQ==}
     dependencies:
       emmet: 2.3.6
       jsonc-parser: 2.3.1
       vscode-languageserver-textdocument: 1.0.8
       vscode-languageserver-types: 3.17.2
-      vscode-nls: 5.2.0
       vscode-uri: 2.1.2
     dev: false
 
@@ -804,19 +800,19 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /astring/1.8.3:
-    resolution: {integrity: sha512-sRpyiNrx2dEYIMmUXprS8nlpRg2Drs8m9ElX9vVEXaCB4XEAJhKfs7IcX0IwShjuOAjLR6wzIrgoptz1n19i1A==}
+  /astring/1.8.4:
+    resolution: {integrity: sha512-97a+l2LBU3Op3bBQEff79i/E4jMD2ZLFD8rHx9B6mXyB2uQwhJQYfiDqUwtfjF4QA1F2qs//N6Cw8LetMbQjcw==}
     hasBin: true
     dev: false
 
-  /astro/1.7.2:
-    resolution: {integrity: sha512-svgkfJUBcNzWV9YeoAGv+T96HjSK1j1xy1CbUA4JALU99WEvmJ1tFZBSrd1+m5xW9MuNOleSViGTfXhHfUaH9A==}
+  /astro/1.8.0:
+    resolution: {integrity: sha512-MZIJveOC1OCIA0w2XmxjDtKviAEuYdF142DVq0VApInE1lm+CvAoyMgJs0a1h4mydD2vgQZpTjPhYKJIdxDjOA==}
     engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 0.31.3
       '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 1.1.3
+      '@astrojs/markdown-remark': 1.2.0
       '@astrojs/telemetry': 1.0.1
       '@astrojs/webapi': 1.1.1
       '@babel/core': 7.20.7
@@ -830,8 +826,9 @@ packages:
       '@types/babel__core': 7.1.20
       '@types/html-escaper': 3.0.0
       '@types/yargs-parser': 21.0.0
+      acorn: 8.8.1
       boxen: 6.2.1
-      ci-info: 3.7.0
+      ci-info: 3.7.1
       common-ancestor-path: 1.0.1
       cookie: 0.5.0
       debug: 4.3.4
@@ -839,6 +836,7 @@ packages:
       devalue: 4.2.0
       diff: 5.1.0
       es-module-lexer: 1.1.0
+      estree-walker: 3.0.1
       execa: 6.1.0
       fast-glob: 3.2.12
       github-slugger: 1.5.0
@@ -1041,8 +1039,8 @@ packages:
       fsevents: 2.3.2
     dev: false
 
-  /ci-info/3.7.0:
-    resolution: {integrity: sha512-2CpRNYmImPx+RXKLq6jko/L07phmS9I02TyqkcNU20GCF/GgaWvc58hPtjxDX8lPpkdwc9sNh72V9k00S7ezog==}
+  /ci-info/3.7.1:
+    resolution: {integrity: sha512-4jYS4MOAaCIStSRwiuxc4B8MYhIe676yO1sYGzARnjXkWpmzZMMYxY6zu8WYWDhSuth5zhrQ1rhNSibyyvv4/w==}
     engines: {node: '>=8'}
     dev: false
 
@@ -1509,7 +1507,7 @@ packages:
     resolution: {integrity: sha512-490lbfCcpLk+ofK6HCgqDfYs4KAfq6QVvDw3+Bm1YoKRgiOjKiKYGAVQE1uwh7zVxBgWhqp4FDtp5SqunpUk1A==}
     dependencies:
       '@types/estree-jsx': 1.0.0
-      astring: 1.8.3
+      astring: 1.8.4
       source-map: 0.7.4
     dev: false
 
@@ -2041,8 +2039,8 @@ packages:
     resolution: {integrity: sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==}
     dev: false
 
-  /json5/2.2.2:
-    resolution: {integrity: sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==}
+  /json5/2.2.3:
+    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
     hasBin: true
     dev: false
@@ -2306,8 +2304,8 @@ packages:
       - supports-color
     dev: false
 
-  /mdast-util-to-hast/12.2.4:
-    resolution: {integrity: sha512-a21xoxSef1l8VhHxS1Dnyioz6grrJkoaCUgGzMD/7dWHvboYX3VW53esRUfB5tgTyz4Yos1n25SPcj35dJqmAg==}
+  /mdast-util-to-hast/12.2.5:
+    resolution: {integrity: sha512-EFNhT35ZR/VZ85/EedDdCNTq0oFM+NM/+qBomVGQ0+Lcg0nhI8xIwmdCzNMlVlCJNXRprpobtKP/IUh8cfz6zQ==}
     dependencies:
       '@types/hast': 2.3.4
       '@types/mdast': 3.0.10
@@ -3017,11 +3015,12 @@ packages:
       which-pm: 2.0.0
     dev: false
 
-  /prettier-plugin-astro/0.7.0:
-    resolution: {integrity: sha512-ehCUx7MqHWvkHwUmxxAWLsL35pFaCTM5YXQ8xjG/1W6dY2yBhvEks+2aCfjeI5zmMrZNCXkiMQtpznSlLSLrxw==}
-    engines: {node: ^14.15.0 || >=16.0.0, npm: '>=6.14.0'}
+  /prettier-plugin-astro/0.7.1:
+    resolution: {integrity: sha512-ySeyXHIXNZpbqZCcj8eoWl6z2UDHYl6DPgN7z9E1HElG8aVlC2WQNjfcpcSBuF4jwwo+HHi44pun/Hlr+h8OsA==}
+    engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
+    requiresBuild: true
     dependencies:
-      '@astrojs/compiler': 0.29.15
+      '@astrojs/compiler': 0.31.3
       prettier: 2.8.1
       sass-formatter: 0.7.5
       synckit: 0.8.4
@@ -3167,7 +3166,7 @@ packages:
     dependencies:
       '@types/hast': 2.3.4
       '@types/mdast': 3.0.10
-      mdast-util-to-hast: 12.2.4
+      mdast-util-to-hast: 12.2.5
       unified: 10.1.2
     dev: false
 
@@ -3559,7 +3558,7 @@ packages:
     dependencies:
       '@types/json5': 0.0.30
       '@types/resolve': 1.20.2
-      json5: 2.2.2
+      json5: 2.2.3
       resolve: 1.22.1
       strip-bom: 4.0.0
       type-fest: 0.13.1
@@ -3817,10 +3816,6 @@ packages:
     hasBin: true
     dependencies:
       vscode-languageserver-protocol: 3.17.2
-    dev: false
-
-  /vscode-nls/5.2.0:
-    resolution: {integrity: sha512-RAaHx7B14ZU04EU31pT+rKz2/zSl7xMsfIZuo8pd+KZO6PXtQmpevpq3vxvWNcrGbdmhM/rr5Uw5Mz+NBfhVng==}
     dev: false
 
   /vscode-oniguruma/1.7.0:
