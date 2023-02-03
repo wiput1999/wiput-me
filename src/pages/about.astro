@@ -1,12 +1,12 @@
 ---
 import MainLayout, { Props } from '../layouts/main.astro'
 
-const props: Props = {
+const props = {
   header: {
     title: 'Wiput Pootong · Curriculum Vitae',
     description: 'I am Software Engineer...',
   },
-}
+} satisfies Props
 ---
 
 <MainLayout header={props.header}>
