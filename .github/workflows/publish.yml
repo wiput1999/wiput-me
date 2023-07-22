@@ -3,6 +3,7 @@ on:
     branches:
       - 'main'
 
+name: Build and Deploy
 jobs:
   publish:
     runs-on: ubuntu-latest
