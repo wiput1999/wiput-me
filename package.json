@@ -12,11 +12,11 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
-    "@astrojs/tailwind": "^4.0.0",
+    "@astrojs/mdx": "^1.0.0",
+    "@astrojs/tailwind": "^5.0.0",
     "@tailwindcss/typography": "^0.5.9",
     "@types/canvas-confetti": "^1.6.0",
-    "astro": "^2.10.15",
+    "astro": "^3.0.2",
     "autoprefixer": "^10.4.15",
     "canvas-confetti": "^1.6.0",
     "postcss": "^8.4.29",
