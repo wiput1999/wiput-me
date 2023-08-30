@@ -1,5 +1,5 @@
 ---
-import MainLayout, { Props } from '../layouts/main.astro'
+import MainLayout, { Props } from '../layouts/Layout.astro'
 
 const props: Props = {
   header: {
@@ -10,13 +10,5 @@ const props: Props = {
 ---
 
 <MainLayout header={props.header}>
-  <main>
-    <div
-      class="w-full min-h-screen grid grid-cols-1 justify-center items-center"
-    >
-      <div class="w-full text-center">
-        <p class="text-4xl">404 Not Found</p>
-      </div>
-    </div>
-  </main>
+  <p class="text-4xl">404 Not Found</p>
 </MainLayout>

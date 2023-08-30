@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	color-scheme: light dark;
+}
+
+html,
+body {
+	@apply h-full;
+}
+
+body {
+	@apply overflow-y-scroll;
+}

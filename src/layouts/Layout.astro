@@ -1,0 +1,78 @@
+---
+import 'styles.css'
+import ActiveLink from '../components/ActiveLink.astro'
+
+const { header } = Astro.props
+
+export type Props = {
+  header: {
+    title: string
+    description: string
+  }
+}
+
+const { pathname } = Astro.url
+const url = Astro.url.toString()
+const isHome = pathname === '/'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{header.title}</title>
+    <meta name="theme-color" content="#2d3748" />
+    <meta name="description" content={header.description} />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body
+    class={`bg-white text-slate-800 dark:text-slate-200 dark:bg-neutral-900${
+      isHome ? ' flex items-center' : ''
+    }`}
+  >
+    <div
+      class=`flex m-auto w-full flex-col flex-grow max-w-2xl p-6 ${isHome ? 'h-full max-h-[44rem]'
+      : 'min-h-full' }`
+    >
+      <header>
+        <nav class="flex mx-auto items-center w-full justify-between">
+          <div class="flex">
+            <ActiveLink href="/blog">📝 Blog</ActiveLink>
+            <ActiveLink href="/uses">🔨 Equipments</ActiveLink>
+            {!isHome && <ActiveLink href="/">🏠 Home</ActiveLink>}
+          </div>
+          <a
+            href="https://webring.wonderful.software#wiput.me"
+            title="วงแหวนเว็บ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <picture>
+              <source
+                srcset="https://webring.wonderful.software/webring.white.svg"
+                media="(prefers-color-scheme: dark)"
+              />
+              <img
+                alt="วงแหวนเว็บ"
+                width="32"
+                height="32"
+                src="https://webring.wonderful.software/webring.black.svg"
+              />
+            </picture>
+          </a>
+        </nav>
+      </header>
+      <main class="flex flex-col flex-grow py-12">
+        <slot />
+      </main>
+      <footer class="flex py-4 items-center w-full mx-auto">
+        <div class="flex">
+          <a class="pr-4" href="/uses">Github</a>
+          <a class="pr-4" href="/">LinkedIn</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

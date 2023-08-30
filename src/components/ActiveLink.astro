@@ -1,0 +1,20 @@
+---
+export type Props = {
+  href: string
+}
+
+const { href } = Astro.props
+const { pathname } = Astro.url
+const isActive = href !== '/' && pathname.startsWith(href)
+---
+
+<a
+  href={href}
+  class={`pr-4 ${
+    isActive
+      ? 'text-gray-950 dark:text-slate-100 underline underline-offset-4 font-bold'
+      : 'text-gray-900 dark:text-slate-300 transition-colors duration-200 dark:hover:text-slate-200 hover:underline underline-offset-4'
+  }`}
+>
+  <slot />
+</a>

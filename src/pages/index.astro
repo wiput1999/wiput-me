@@ -1,5 +1,6 @@
 ---
-import MainLayout, { Props } from '../layouts/main.astro'
+import Layout, { Props } from '../layouts/Layout.astro'
+import ActiveLink from '../components/ActiveLink.astro'
 
 const props: Props = {
   header: {
@@ -9,62 +10,11 @@ const props: Props = {
 }
 ---
 
-<MainLayout header={props.header}>
-  <main>
-    <div class="absolute top-4 right-4">
-      <a
-        href="https://webring.wonderful.software#wiput.me"
-        title="วงแหวนเว็บ"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          alt="วงแหวนเว็บ"
-          width="32"
-          height="32"
-          src="https://webring.wonderful.software/webring.black.svg"
-        />
-      </a>
-    </div>
-    <div
-      class="w-full min-h-[100dvh] grid grid-cols-1 justify-center items-center"
-    >
-      <div class="w-full text-center">
-        <p class="text-4xl">WIPUT POOTONG</p>
-        <p class="text-xl">Software Engineer</p>
-        <div
-          class="flex flex-row justify-between mt-4 md:mt-8 px-4 mx-auto max-w-lg underline"
-        >
-          <a
-            href="https://cv.wiput.me"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            About me
-          </a>
-          <a
-            href="https://blog.wiput.me"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Blog
-          </a>
-          <a
-            href="https://github.com/wiput1999"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/wiputpootong/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </div>
-  </main>
-</MainLayout>
+<Layout header={props.header}>
+  <article class="my-auto pb-8">
+    <h1 class="text-6xl font-bold mb-3">Wiput Pootong</h1>
+    <p class="block font-medium text-md">
+      I'm a Full-stack Developer at 30SecondsToFly
+    </p>
+  </article>
+</Layout>
