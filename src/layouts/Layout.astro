@@ -37,18 +37,29 @@ const isHome = pathname === '/'
     }`}
   >
     <div
-      class=`flex m-auto w-full flex-col flex-grow max-w-2xl p-6 ${isHome ? 'h-full max-h-[44rem]'
+      class=`flex m-auto w-full flex-col flex-grow max-w-2xl py-6 ${isHome ? 'h-full max-h-[44rem]'
       : 'min-h-full' }`
     >
-      <header>
+      <header transition:animate="initial">
         <nav class="flex mx-auto items-center w-full justify-between">
           <div class="flex">
-            <ActiveLink href="/blog">📝 Blog</ActiveLink>
-            <ActiveLink href="/uses">🔨 Equipments</ActiveLink>
-            {!isHome && <ActiveLink href="/">🏠 Home</ActiveLink>}
+            <ActiveLink icon="mdi:account-outline" href="/about">
+              About
+            </ActiveLink>
+            <ActiveLink icon="mdi:book-edit-outline" href="/blog">
+              Blog
+            </ActiveLink>
+            <ActiveLink icon="mdi:tools" href="/tools">Tools</ActiveLink>
+            {
+              !isHome && (
+                <ActiveLink icon="mdi:home-variant-outline" href="/">
+                  Home
+                </ActiveLink>
+              )
+            }
           </div>
           <a
-            href="https://webring.wonderful.software#wiput.me"
+            href="https://webring.wonderful.software/#wiput.me"
             title="วงแหวนเว็บ"
             target="_blank"
             rel="noopener noreferrer"
@@ -60,8 +71,8 @@ const isHome = pathname === '/'
               />
               <img
                 alt="วงแหวนเว็บ"
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 src="https://webring.wonderful.software/webring.black.svg"
               />
             </picture>
@@ -71,9 +82,12 @@ const isHome = pathname === '/'
       <main class="flex flex-col flex-grow py-12">
         <slot />
       </main>
-      <footer class="flex py-4 items-center w-full mx-auto">
+      <footer
+        class="flex items-center w-full mx-auto"
+        transition:animate="initial"
+      >
         <div class="flex">
-          <a class="pr-4" href="/uses">Github</a>
+          <a class="pr-4" href="https://github.com/wiput1999">Github</a>
           <a class="pr-4" href="/">LinkedIn</a>
         </div>
       </footer>

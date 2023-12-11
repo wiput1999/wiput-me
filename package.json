@@ -17,6 +17,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/canvas-confetti": "^1.6.0",
     "astro": "^3.0.2",
+    "astro-icon": "^0.8.1",
     "autoprefixer": "^10.4.15",
     "canvas-confetti": "^1.6.0",
     "postcss": "^8.4.29",

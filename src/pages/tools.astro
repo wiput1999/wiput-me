@@ -1,0 +1,16 @@
+---
+import Layout, { type Props } from '../layouts/Layout.astro'
+
+const props: Props = {
+  header: {
+    title: 'Blog',
+    description: 'I am Software Engineer...',
+  },
+}
+---
+
+<Layout header={props.header}>
+  <article class="pb-8">
+    <h1 class="text-6xl font-bold mb-3">Tools</h1>
+  </article>
+</Layout>
